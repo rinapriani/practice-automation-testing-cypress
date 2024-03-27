@@ -1,0 +1,27 @@
+
+{
+    "dataWebInput": {
+        "validData": {
+            "userNumber": "13041998",
+            "userName" : "Rina Apriani Software Tester",
+            "userPassword": "rinaPassword"
+        }
+        
+    },
+    "iFrameData": {
+        "validDataiFrame": {
+            "userEmail": "rina.apriani498@gmail.com",
+            "message": "Welcome to cypress automation testing for iframe"
+        }
+    },
+    "tracaloriesData": {
+        "validDataTracalories": {
+            "itemName1" : "Bakso", 
+            "itemName2" : "Pizza",
+            "itemName3" : "Noodle",
+            "calories1" : 1200,
+            "calories2" : 2300,
+            "calories3" : 4500
+        }
+    }
+}

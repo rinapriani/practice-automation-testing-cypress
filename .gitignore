@@ -1,0 +1,14 @@
+# Ignore Node.js modules
+node_modules/
+
+# Ignore Cypress binary cache
+.cypress/
+
+# Ignore .DS_Store files created by macOS
+.DS_Store
+
+# Ignore environment variables file
+cypress.env.json
+
+# Ignore any local configuration files (customized for specific users)
+config.json
