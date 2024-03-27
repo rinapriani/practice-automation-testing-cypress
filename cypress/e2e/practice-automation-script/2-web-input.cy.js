@@ -17,38 +17,38 @@ describe('Hanle Dropdown List', () => {
             
             //verify number 
             cy.get('strong.output-box#output-number')
-            .should('be.visible') // Ensure the element is visible
-            .invoke('text') // Get the text content of the element
+            .should('be.visible') 
+            .invoke('text') 
             .then(text => {
                 // Assert that the text content is correct
-                expect(text.trim()).to.equal(validUser.userNumber); // Adjust the expected text as needed
+                expect(text.trim()).to.equal(validUser.userNumber); 
             });
 
             //verify input text
             cy.get('strong.output-box#output-text')
-            .should('be.visible') // Ensure the element is visible
-            .invoke('text') // Get the text content of the element
+            .should('be.visible') 
+            .invoke('text') 
             .then(text => {
                 // Assert that the text content is correct
-                expect(text.trim()).to.equal(validUser.userName); // Adjust the expected text as needed
+                expect(text.trim()).to.equal(validUser.userName); 
             });
 
             //verify input password
             cy.get('strong.output-box#output-password')
-            .should('be.visible') // Ensure the element is visible
-            .invoke('text') // Get the text content of the element
+            .should('be.visible') 
+            .invoke('text') 
             .then(text => {
                 // Assert that the text content is correct
-                expect(text.trim()).to.equal(validUser.userPassword); // Adjust the expected text as needed
+                expect(text.trim()).to.equal(validUser.userPassword); 
             });
 
             //verify input date
             cy.get('strong.output-box#output-date')
-            .should('be.visible') // Ensure the element is visible
-            .invoke('text') // Get the text content of the element
+            .should('be.visible') 
+            .invoke('text') 
             .then(text => {
                 // Assert that the text content is correct
-                expect(text.trim()).to.equal('2024-03-25'); // Adjust the expected text as needed
+                expect(text.trim()).to.equal('2024-03-25'); 
             });
         }); 
     });

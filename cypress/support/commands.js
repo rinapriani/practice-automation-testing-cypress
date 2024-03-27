@@ -27,9 +27,9 @@
 Cypress.Commands.add('dropdown', () => {
     cy.get('#dropdown').select('Option 2').should('have.value', '2');
 
-    // Assert that Option 2 is selected
-   cy.get('select')  // Assuming the select element has no unique identifier
-   .find('option[value="2"]')  // Find the option with value "2"
+    
+   cy.get('select') 
+   .find('option[value="2"]')  
    .should('have.attr', 'selected', 'selected');
 
    // Stubbing the onchange event to prevent it from causing errors
@@ -38,8 +38,8 @@ Cypress.Commands.add('dropdown', () => {
    });
 
    // Select the option with value '20'
-   cy.get('#elementsPerPageSelect') // Assuming the select element has id "elementsPerPageSelect"
-   .select('20'); // Select option with value '20'
+   cy.get('#elementsPerPageSelect') 
+   .select('20'); 
 })
 
 Cypress.Commands.add('inputDataForProcessing', (userData) => {
@@ -72,11 +72,9 @@ Cypress.Commands.add('clickYouTubeLink', () => {
         // Visit the YouTube URL directly
         cy.visit(src);
         
-        // You can now perform any interactions with the YouTube video
-        // For example, you can click on the video player to play it
         cy.get('div.html5-video-container').click();
       } else {
-        // Handle cases where the src attribute does not contain a YouTube URL
+        
         cy.log('The iframe does not contain a YouTube video.');
       }
     });
@@ -99,12 +97,12 @@ Cypress.Commands.add('TinyMCEEditor', () => {
 
         cy.get('button[title="Format Bold"]').click();
 
-         // Click on the "Heading" option
+         
         cy.get('.tox-tiered-menu')
         .contains('Headings')
         .click();
 
-        // Click on the "Heading 1" option
+        
         cy.get('.tox-tiered-menu')
         .contains('Heading 1')
         .click();
@@ -125,11 +123,11 @@ Cypress.Commands.add('subscription', () => {
      cy.get('#email-subscribe').then(($iframe) => {
          const iframe = $iframe.contents().find('body');
 
-         // Type email into the input field inside the iframe
+         
          cy.wrap(iframe).find('input[type="email"]').type('rina.apriani498@gmail.com');
          cy.wrap(iframe).find('#btn-subscribe').click();
 
-         // Verify the success message text inside the iframe
+         
          cy.wrap(iframe).find('#success-message')
              .should('have.text', 'You are now subscribed!');
      });
