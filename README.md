@@ -40,9 +40,4 @@ To open the Cypress Test Runner:
 ```bash
 npx cypress open
 
-## Example
-Check out the cypress/integration directory for example test files.
-
-1. example_spec.js: This file contains a basic example test.
-2. Add any additional example files here.
 
