@@ -7,7 +7,6 @@ This tutorial provides a beginner-friendly introduction to using Cypress for aut
 1. [Introduction](#introduction)
 2. [Installation](#installation)
 3. [Usage](#usage)
-4. [Examples](#examples)
 
 ## Introduction
 
