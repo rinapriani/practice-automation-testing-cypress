@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-context('Hanle Dropdown List', () => {
+context('Handle Dropdown List', () => {
     beforeEach(() => {
 
       cy.visit('https://practice.expandtesting.com/dropdown')

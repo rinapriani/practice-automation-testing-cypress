@@ -181,3 +181,13 @@ Cypress.Commands.add('tracalories', () => {
 
     });
 })
+
+Cypress.Commands.add('formValidation', (formDataValid) => {
+
+        cy.get('#validationCustom01').clear().type(formDataValid.name);
+        cy.get('#validationCustom05').type(formDataValid.phoneNumber);
+        cy.get('#validationCustom04').select('cashondelivery');
+        cy.get('button[type="submit"]').should('contain', 'Register').click();
+        cy.get('div.invalid-feedback').should('contain', 'Please provide valid Date.');
+
+})

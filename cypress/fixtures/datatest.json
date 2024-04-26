@@ -23,5 +23,11 @@
             "calories2" : 2300,
             "calories3" : 4500
         }
+    },
+    "formValidationData" : {
+        "formValidationDataValid" : {
+            "name" : "Rina Apriani",
+            "phoneNumber": "012-2234635"
+        }
     }
 }
